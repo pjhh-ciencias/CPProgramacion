@@ -24,6 +24,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
 html, body{
   margin: 0;
   padding: 4%;
@@ -195,8 +197,9 @@ width: 100%;
 
 
 .subtitle{
-  font-size: 180%;
-  font: italic monospace;
+  font-size: 200%;
+  /* font: italic monospace; */
+  font-family: 'Bacasime Antique', serif;
   padding: 0.15%;
   font-weight: 800;
   margin-bottom: 0%;
@@ -215,10 +218,11 @@ width: 100%;
 }
 
 .subsubtitle{
-  font-size: 160%;
+  font-size: 185%;
   padding: 0px;
-  font-family: "Muli";
-  font-weight: 700;
+  /* font-family: "Muli"; */
+  font-family: 'Bacasime Antique', serif;
+  /* font-weight: 700; */
   margin-top: 0.25%;
   color: rgb(15, 108, 185);
   width: 100%;
