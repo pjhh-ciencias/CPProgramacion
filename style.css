@@ -421,7 +421,7 @@ h2.number-title:before{
   box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
 }
 
-
+/* 
 .ejercicio-box-dark{
   background:  rgb(  33, 47, 60  );
   color:  rgb( 165, 105, 189 );
@@ -434,7 +434,7 @@ h2.number-title:before{
   font-size: 20px;
   width: 70%;
   box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
+} */
 
 
 
@@ -478,7 +478,7 @@ h2.number-title:before{
     */
 }
 
-
+/* 
 .nota-box-dark{
     background:  rgb(  33, 47, 60  );
     color:  rgb( 165, 105, 189 );
@@ -492,7 +492,7 @@ h2.number-title:before{
     width: 70%;
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
-
+ */
 
 .teorema-box{
   background:  rgb(218, 237, 245);
@@ -519,7 +519,7 @@ h2.number-title:before{
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );*/
 }
 
-
+/* 
 .teorema-box-dark{
     background:  rgb(  33, 47, 60  );
     color:  rgb( 165, 105, 189 );
@@ -532,7 +532,7 @@ h2.number-title:before{
     font-size: 20px;
     width: 70%;
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
+} */
 
 
 .resp-box{
