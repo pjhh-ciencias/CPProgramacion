@@ -117,28 +117,31 @@ width: 100%;
 }
 
 .top-nav a{
-  padding: 0.65%; 
+  padding: 1%; 
   font-size: 185%;
   font-weight: 450;
   text-decoration: none;
   color: rgb(25,25,112);
-  font-family: system-ui;
+  /* font-family: system-ui; */
+  font-family: 'IM Fell English';
   /* color:  rgb(0, 0, 0); */
   width: 100%;
-
 }
 
 .top-nav a:hover{
   transition: background-color 0.5s ease;
-  /*transition: font-size 0.5s ease;
-  */
+  /*transition: font-size 0.5s ease;*/
   background-color: rgb(211, 211, 211);
-  /* padding: 0.65%;  */
+  /*padding: 0.65%; */
   font-size: 185%;
   font-weight: 600;
   color: rgb(25,25,112);
   border-radius: 10px;
   width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .small-nav button{
