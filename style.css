@@ -18,6 +18,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 html, body{
   margin: 0;
   padding: 4%;
@@ -161,11 +167,12 @@ width: 100%;
     
 
 .title{
-  font-size: 210%;
+  font-size: 280%;
   padding: .8%;
-  font-weight: 800;
+  /* font-weight: 800; */
   text-align: center;
-  font-family: "Cinzel";
+  /* font-family: "Cinzel"; */
+  font-family: 'Fredericka the Great', cursive;
   margin-top: 0%;
   /* color:  rgb(0, 46, 145); */
   color: rgb(184,134,11); 
@@ -327,7 +334,9 @@ h1.page-subtitle{
 
 h1.title{
   font-size: 150%;
-  font-family: "Muli";
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  font-family: 'Cabin Sketch', cursive;
   margin-top: -2.5%;
   margin-bottom: 0%;
   content:" ";
