@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Faustina:ital,wght@0,300;0,500;1,500&family=Freckle+Face&family=Fredericka+the+Great&family=Roboto+Mono:wght@100&family=Rock+3D&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Enriqueta&family=Faustina:ital,wght@0,300;0,500;1,500&family=Freckle+Face&family=Fredericka+the+Great&family=Roboto+Mono:wght@100&family=Rock+3D&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Caprasimo&family=Enriqueta&family=Faustina:ital,wght@0,300;0,500;1,500&family=Freckle+Face&family=Fredericka+the+Great&family=Roboto+Mono:wght@100&family=Rock+3D&display=swap');
@@ -25,6 +26,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 
 html, body{
   margin: 0;
@@ -119,7 +124,7 @@ width: 100%;
 }
 
 .top-nav li{
-  padding: 2.5%; 
+  padding: 1.75%; 
   display: inline;
   color: #ffffff;
   width: 100%;
@@ -138,8 +143,8 @@ width: 100%;
 }
 
 .top-nav a:hover{
-  transition: background-color 0.5s ease;
-  /*transition: font-size 0.5s ease;*/
+  transition: background-color 0.75s ease;
+  /* transition: font-size 0.75s ease; */
   background-color: rgb(211, 211, 211);
   font-size: 185%;
   font-weight: 550;
@@ -150,6 +155,10 @@ width: 100%;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  -webkit-transition: font-size 0.75s ease;
+  -moz-transition: font-size 0.75s ease;
+  -ms-transition: font-size 0.75s ease;
+  -o-transition: font-size 0.75s ease;
 }
 
 .small-nav button{
@@ -169,12 +178,13 @@ width: 100%;
     
 
 .title{
-  font-size: 280%;
-  padding: .8%;
+  font-size: 300%;
+  padding: .75%;
   /* font-weight: 800; */
   text-align: center;
   /* font-family: "Cinzel"; */
   font-family: 'Fredericka the Great', cursive;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
   margin-top: 0%;
   /* color:  rgb(0, 46, 145); */
   color: rgb(184,134,11); 
@@ -197,9 +207,12 @@ width: 100%;
 
 
 .subtitle{
-  font-size: 200%;
+  font-size: 150%;
   /* font: italic monospace; */
-  font-family: 'Bacasime Antique', serif;
+  /* font-family: 'Bacasime Antique', serif; */
+  /* font-family: 'Bacasime Antique', serif; */
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  font-family: 'Fredericka the Great', cursive;
   padding: 0.15%;
   font-weight: 800;
   margin-bottom: 0%;
@@ -209,19 +222,21 @@ width: 100%;
   
 }
 
-.subtitle a{
+/* .subtitle a{
   text-decoration: none;
 }
 
 .subtitle a:visited {
   text-decoration: none;
-}
+} */
 
 .subsubtitle{
-  font-size: 185%;
+  font-size: 150%;
   padding: 0px;
   /* font-family: "Muli"; */
-  font-family: 'Bacasime Antique', serif;
+  /* font-family: 'Bacasime Antique', serif; */
+  /* font-family: 'Bacasime Antique', serif; */
+  font-family: 'Fredericka the Great', cursive;
   /* font-weight: 700; */
   margin-top: 0.25%;
   color: rgb(15, 108, 185);
