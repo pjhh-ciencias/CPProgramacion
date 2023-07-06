@@ -40,6 +40,16 @@
     </script>
 
 
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title{
+        counter-reset: sectionCounter 1 subsectioncounter ;
+      } */
+      h1.page-title{
+        counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+      }
+    </style>
+
     <!-- CSS -->
 
     <link rel="stylesheet" , href="../style.css" />
@@ -86,22 +96,17 @@
 
 
 
-      <body class="fondo-body" ><h1 class="titulo"> Semana 1 </h1>   
+      <body class="fondo-body" ><h1 class="page-title"> Semana 1 </h1>   
+      <h1 class="page-subtitle">Etapas en la solución de un problema</h1>   
 
-    
-        <h1 class="title flexbox_"> Etapas en la solución de un problema  </h1>   
         
-        <div class="nota-box">
-          <h2 class="number-title"> Introducción</h2>  
-    
-    
-       <p>
+      <div class="nota-box"><h1 class="number-title"> Introducción</h1>  
+      <p>
         El proceso de <b>resolución de un problema</b> mediante una computadora abarca desde la <em>descripción inicial del
         problema</em> hasta el <em>desarrollo de un programa</em>  de computadora que lo resuelva.</b> 
-       </p>
+      </p>
     
-       
-       <p>En la siguiente figura se resume las etapas que debemos seguir para solucionar algún problema:</p> 
+      <p>En la siguiente figura se resume las etapas que debemos seguir para solucionar algún problema:</p> 
     
         <p>
           <div class="flexbox">
@@ -121,8 +126,7 @@
       </div>
     
       
-    <div class="nota-box">
-      <h2 class="number-title"> Definición o análisis del problema</h2>
+    <div class="nota-box"><h1 class="number-title"> Definición o análisis del problema</h2>
     
       <p>La definición del problema comienza analizando los <b>requisitos del usuario</b>;
        estos requisitos con frecuencia suelen ser imprecisos y difíciles de escribir.
@@ -138,15 +142,9 @@
             <li><b>¿Qué <em>método</em> produce la salida deseada a partir de los datos de entrada?</b></li>
           </ul>
         </p>
-       
-        
-        
-    
-    
     </div>
       
-    <div class="nota-box">
-      <h2 class="number-title"> Diseño del algoritmo</h2> 
+    <div class="nota-box"><h1 class="number-title"> Diseño del algoritmo</h2> 
       
       <p>Casi inconscientemente, los humanos efectuamos cotidianamente una serie de pasos, procedimientos o acciones que nos permiten
         <b>alcanzar un resultado</b> o <b>resolver un problema</b>. <!-- Continuamente seguimos una serie de pasos o conjunto de acciones que nos

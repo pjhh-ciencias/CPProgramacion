@@ -185,7 +185,6 @@ width: 100%;
     border-radius:  10px  solid #aef1c8;
   }
 
-    
 
 .title{
   font-size: 300%;
@@ -201,7 +200,17 @@ width: 100%;
   width: 100%;
 }
 
-
+h1.title{
+  font-size: 180%;
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  font-family: 'Cabin Sketch', cursive;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: -2.5%;
+  margin-bottom: 0%;
+  /* content:" "; */
+  color: rgb(0, 77, 179);
+}
 
 .subtitle{
   font-size: 150%;
@@ -313,94 +322,68 @@ width: 100%;
   text-decoration: none;
 }
 
-
 img.wmargen {
   margin-top:-120px;
   margin-right: -120px;
 }
 
-
-
-
  /* /////////////   for numbering /////////////////////////*/
-
-
 body.card{
-    counter-reset: sectionCounter  cardCounter ;
+    counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
           }
 
-
 h1.page-title{
-  font-size: 40px;
+  font-size: 250%;
+  text-align: center;
   font-family: "Muli";
-  content:" ";
-  margin-bottom: -5px;
-  padding: 0px;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  /* margin-bottom: -5px; */
+  /* padding: 0px; */
+  width: 100%;
   color: rgba(0, 111, 208, 0.789);
 }
 
-
 h1.page-subtitle{
-  font-size: 210%;
+  font-size: 220%;
   /* padding: 1%; */
   /* font-weight: 800; */
   text-align: center;
   /* font-family: 'Caprasimo', cursive; */
-  font-family: 'IM Fell English', serif;
+  /* font-family: 'IM Fell English', serif; */
   /* font-family: "Cinzel"; */
   /* margin-top: 1%; */
   /* color:  rgb(0, 46, 145); */
   /* color: rgb(184,134,11);  */
   width: 100%;
-
-  /* content:" "; */
   /* color: rgba(0, 111, 208, 0.867);  */
 }
 
-
-
-h1.title{
-  font-size: 180%;
-  /* font-family: "Muli"; */
-  /* font-family: 'Pangolin', cursive; */
-  font-family: 'Cabin Sketch', cursive;
-  /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: -2.5%;
-  margin-bottom: 0%;
-  content:" ";
-  color: rgb(0, 77, 179);
-}
-
-
 h1.number-title{
-  counter-reset: sectionCounter  cardCounter ;
+  font-size: 200%;
   font-family: "Muli";
-  font-size: 33px;
+  /* font-size: 33px; */
 }
 
-
-h1.number-subtitle:before{
-  font-family: "Muli";
+h1.number-title:before{
+  font-family: "Roboto";
+  counter-increment: sectionCounter;
+  content: counter(semanaCounter)"."counter(sectionCounter)"";
  }
  
 
-h1.number-title:before{
- counter-increment: sectionCounter;
- /*content:"Semana " counter(sectionCounter) " ";*/
- content:" " counter(sectionCounter) " ";
- font-family: "Muli";
- color: rgb(255, 255, 255);
-}
-
 h2.number-title{
-  font-size: 35px;
-  font-family: "Roboto";
+  font-size: 180%;
+  font-family: "Multi";
 }
 
 h2.number-title:before{
- counter-increment: cardCounter;
- content: counter(sectionCounter)"."counter(cardCounter)"";
+  font-family: "Roboto";
+  counter-increment: subsectionCounter;
+  content: counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter);
 }
+
+
 
 
 /*/////////////// for body boxes  /////////////////////*/
@@ -512,8 +495,6 @@ h2.number-title:before{
   box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 } */
 
-
-
 .nota-box{
     /* background:  rgb(218, 237, 245); */
     background: rgb(252, 252, 244);
@@ -525,7 +506,7 @@ h2.number-title:before{
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 20px;
-    width: 80%;
+    width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 
   /* background:  rgb(218, 237, 245);
