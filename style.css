@@ -70,6 +70,16 @@ align-content: flex-start;
 width: 100%;
 }
 
+
+
+
+.flexbox_{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .informacion_profesor{
   display: flex;
   flex-direction: column;
