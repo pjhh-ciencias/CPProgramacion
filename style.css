@@ -37,16 +37,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 /* font-family: 'Hina Mincho', serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+/* font-family: 'Hina Mincho', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* font-family: 'EB Garamond', serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+/* font-family: 'Josefin Slab', serif; */
 
 html, body{
   margin: 0;
   padding: 4%;
   font-family: "Quicksand";
+  /* font-family: 'Hina Mincho', serif; */
+  /* font-family: 'EB Garamond', serif; */
+  /* font-family: 'Josefin Slab', serif; */
   /* flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center; */
-
+  /* font-size: 105%; */
 }
 
 .fondo-body{
@@ -291,6 +303,20 @@ width: 100%;
 }
 
 
+h1.title{
+  font-size: 180%;
+  font-weight: 600;
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: -2.5%;
+  margin-bottom: 0%;
+  content:" ";
+  color: rgb(0, 77, 179);
+}
+
 .secciones-main ul{
   margin: 0;
   padding: 10px;
@@ -330,10 +356,7 @@ h1.page-title{
   /* color: rgba(255, 0, 0, 0.789); */
   /* color:  rgb(0,0,128);  */
   color: rgb(184,134,11); 
-
   /* font-weight: 500; */
-
-
 }
 
 h1.page-subtitle{
@@ -352,7 +375,6 @@ h1.page-subtitle{
   width: 100%;
   /* color: rgb(7, 136, 250);  */
   color: rgb(3, 89, 165); 
-
 }
 
 h1.number-title{
@@ -365,19 +387,14 @@ h1.number-title{
   font-family: 'Hina Mincho', serif;
   /* font-size: 33px; */
   color: rgb(3, 89, 165); 
-
 }
 
 h1.number-title:before{
   /* font-family: "Roboto"; */
-  font-family: 'Hina Mincho', serif;
-  
+  font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
   content: counter(semanaCounter)"."counter(sectionCounter)".";
-  
-
- }
- 
+}
 
 h2.number-title{
   margin-top: -1.5%;
@@ -385,7 +402,6 @@ h2.number-title{
   font-size: 175%;
   font-family: 'Hina Mincho', serif;
   color: rgb(3, 89, 165); 
-
 }
 
 h2.number-title:before{
@@ -396,10 +412,7 @@ h2.number-title:before{
 }
 
 
-
-
 /*/////////////// for body boxes  /////////////////////*/
-
 
 .info-box{
   /* background:  rgb(218, 237, 245); */
@@ -429,7 +442,6 @@ h2.number-title:before{
     width: 80%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 }
-
 
 .info-box-dark{
     background:  rgb(  33, 47, 60  );
@@ -508,12 +520,12 @@ h2.number-title:before{
     background: rgb(252, 252, 244);
     color: black;
     border-radius: 20px;
-    padding: 50px;
+    padding: 3%;
     border: 0px solid  rgb(218,165,32);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 120%;
     width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 
