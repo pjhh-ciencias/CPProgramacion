@@ -12,7 +12,7 @@
 
 
     <!-- This part is to load main.js -->
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="../main.js"></script>
 
     
 
@@ -40,6 +40,17 @@
       }
   };
     </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title{
+        counter-reset: sectionCounter 1 subsectioncounter ;
+      } */
+      h1.page-title-practica{
+        counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+      }
+    </style>
 
     <!-- CSS -->
 
@@ -87,11 +98,16 @@
 
 
 
-  <body class="fondo-body" ><h1 class="titulo"> Práctica 1 </h1>   
+  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 1 </h1>   
     
   
-    <div class="nota-box">
-      <h2 class="number-title"> Práctica</h2>
+    <div class="nota-box"><h1 class="number-title-practica">Práctica</h1>
+      <p></p>
+        
+    </div>
+
+    
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
       <p></p>
         
     </div>

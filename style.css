@@ -412,6 +412,46 @@ h2.number-title:before{
 }
 
 
+
+/* Para praticas  */
+
+h1.page-title-practica{
+  font-size: 225%;
+  text-align: center;
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  /* margin-bottom: -5px; */
+  padding: 0%;
+  width: 100%;
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  color: rgb(184,134,11); 
+  /* font-weight: 500; */
+}
+
+h1.number-title-practica{
+  font-size: 185%;
+  margin-top: -1.75%;
+  padding: 0.25%;
+  text-align: center;
+  /* font-weight: 800; */
+  /* font-family: "Muli"; */
+  font-family: 'Hina Mincho', serif;
+  /* font-size: 33px; */
+  color: rgb(3, 89, 165); 
+}
+
+h1.number-title-practica:after{
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: sectionCounter;
+  content: " " counter(semanaCounter)"."counter(sectionCounter) ".";
+}
+
+
+
 /*/////////////// for body boxes  /////////////////////*/
 
 .info-box{
