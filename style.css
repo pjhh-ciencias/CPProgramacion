@@ -31,6 +31,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap'); 
+/* font-family: 'Gelasio', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+/* font-family: 'Hina Mincho', serif; */
+
+
 html, body{
   margin: 0;
   padding: 4%;
@@ -58,7 +65,7 @@ html, body{
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  width: 11%;
+  width: 10%;
 }
 
 .flexbox{
@@ -68,16 +75,6 @@ justify-content: center;
 align-items: center;
 align-content: flex-start;
 width: 100%;
-}
-
-
-
-
-.flexbox_{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .informacion_profesor{
@@ -187,9 +184,9 @@ width: 100%;
 
 
 .title{
-  font-size: 300%;
+  font-size: 310%;
   padding: .75%;
-  /* font-weight: 800; */
+  font-weight: 500; 
   text-align: center;
   /* font-family: "Cinzel"; */
   font-family: 'Fredericka the Great', cursive;
@@ -200,18 +197,6 @@ width: 100%;
   width: 100%;
 }
 
-h1.title{
-  font-size: 180%;
-  /* font-family: "Muli"; */
-  /* font-family: 'Pangolin', cursive; */
-  font-family: 'Cabin Sketch', cursive;
-  /* font-family: 'Jacques Francois Shadow', cursive; */
-  margin-top: -2.5%;
-  margin-bottom: 0%;
-  /* content:" "; */
-  color: rgb(0, 77, 179);
-}
-
 .subtitle{
   font-size: 150%;
   /* font: italic monospace; */
@@ -220,7 +205,7 @@ h1.title{
   /* font-family: 'Jacques Francois Shadow', cursive; */
   font-family: 'Fredericka the Great', cursive;
   padding: 0.15%;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 0%;
   margin-top: -1%;
   color:  rgb(0,0,128); 
@@ -243,7 +228,7 @@ h1.title{
   /* font-family: 'Bacasime Antique', serif; */
   /* font-family: 'Bacasime Antique', serif; */
   font-family: 'Fredericka the Great', cursive;
-  /* font-weight: 700; */
+  font-weight: 600; 
   margin-top: 0.25%;
   color: rgb(15, 108, 185);
   width: 100%;
@@ -333,54 +318,81 @@ body.card{
           }
 
 h1.page-title{
-  font-size: 250%;
+  font-size: 225%;
   text-align: center;
-  font-family: "Muli";
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
   /* margin-bottom: -5px; */
-  /* padding: 0px; */
+  padding: 0%;
   width: 100%;
-  color: rgba(0, 111, 208, 0.789);
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  color: rgb(184,134,11); 
+
+  /* font-weight: 500; */
+
+
 }
 
 h1.page-subtitle{
-  font-size: 220%;
-  /* padding: 1%; */
-  /* font-weight: 800; */
+  font-size: 250%;
+  padding: 0%;
+  margin-bottom: -1.5%;
+  /* font-weight: 600; */
   text-align: center;
+  font-family: 'Hina Mincho', serif;
   /* font-family: 'Caprasimo', cursive; */
   /* font-family: 'IM Fell English', serif; */
   /* font-family: "Cinzel"; */
-  /* margin-top: 1%; */
+  margin-top: 1%;
   /* color:  rgb(0, 46, 145); */
   /* color: rgb(184,134,11);  */
   width: 100%;
-  /* color: rgba(0, 111, 208, 0.867);  */
+  /* color: rgb(7, 136, 250);  */
+  color: rgb(3, 89, 165); 
+
 }
 
 h1.number-title{
-  font-size: 200%;
-  font-family: "Muli";
+  font-size: 185%;
+  margin-top: -1.75%;
+  padding: 0.25%;
+  text-align: center;
+  /* font-weight: 800; */
+  /* font-family: "Muli"; */
+  font-family: 'Hina Mincho', serif;
   /* font-size: 33px; */
+  color: rgb(3, 89, 165); 
+
 }
 
 h1.number-title:before{
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;
+  
   counter-increment: sectionCounter;
-  content: counter(semanaCounter)"."counter(sectionCounter)"";
+  content: counter(semanaCounter)"."counter(sectionCounter)".";
+  
+
  }
  
 
 h2.number-title{
-  font-size: 180%;
-  font-family: "Multi";
+  margin-top: -1.5%;
+  padding: 0.25%;
+  font-size: 175%;
+  font-family: 'Hina Mincho', serif;
+  color: rgb(3, 89, 165); 
+
 }
 
 h2.number-title:before{
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;
   counter-increment: subsectionCounter;
-  content: counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter);
+  content: counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
 }
 
 
@@ -419,7 +431,6 @@ h2.number-title:before{
 }
 
 
-
 .info-box-dark{
     background:  rgb(  33, 47, 60  );
     color:  rgb( 165, 105, 189 );
@@ -448,7 +459,6 @@ h2.number-title:before{
   box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
-
 .definicion-box-dark{
   background:  rgb(  33, 47, 60  );
   color:  rgb( 165, 105, 189 );
@@ -464,9 +474,7 @@ h2.number-title:before{
   box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
-
-.ejercicio-box{
- 
+.ejercicio-box{ 
   background:  rgb(218, 237, 245);
   color: black;
   border-radius: 20px;

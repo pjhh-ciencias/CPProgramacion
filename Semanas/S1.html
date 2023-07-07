@@ -81,25 +81,20 @@
             <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
           </ul>
           </nav>
-       
-        
         <!-- 
           <nav class="small-nav" align=right>
             <button onclick="myFunction()">Claro/Obscuro 
           </nav> 
         -->
-
       <!-- This part is for title in tab-->
             
       <title>Semana 1</title>
       </head>  
 
-
-
       <body class="fondo-body" ><h1 class="page-title"> Semana 1 </h1>   
-      <h1 class="page-subtitle">Etapas en la solución de un problema</h1>   
 
-        
+
+      <h1 class="page-subtitle">Etapas en la solución de un problema</h1>   
       <div class="nota-box"><h1 class="number-title"> Introducción</h1>  
       <p>
         El proceso de <b>resolución de un problema</b> mediante una computadora abarca desde la <em>descripción inicial del
@@ -126,7 +121,7 @@
       </div>
     
       
-    <div class="nota-box"><h1 class="number-title"> Definición o análisis del problema</h2>
+    <div class="nota-box"><h1 class="number-title"> Definición o análisis del problema</h1>
     
       <p>La definición del problema comienza analizando los <b>requisitos del usuario</b>;
        estos requisitos con frecuencia suelen ser imprecisos y difíciles de escribir.
@@ -144,7 +139,7 @@
         </p>
     </div>
       
-    <div class="nota-box"><h1 class="number-title"> Diseño del algoritmo</h2> 
+    <div class="nota-box"><h1 class="number-title"> Diseño del algoritmo</h1> 
       
       <p>Casi inconscientemente, los humanos efectuamos cotidianamente una serie de pasos, procedimientos o acciones que nos permiten
         <b>alcanzar un resultado</b> o <b>resolver un problema</b>. <!-- Continuamente seguimos una serie de pasos o conjunto de acciones que nos
@@ -152,8 +147,8 @@
         empieza el día, cuando, por ejemplo, <b>tomar un bañar</b>. Luego, tenemos que continuar con una serie de pasos que 
         nos permitan alcanzar otro resultado específico: <b>desayunar</b>. La historia se repite innumerables veces durante 
         el día. En realidad todo el tiempo estamos aplicando <em>algoritmos</em> para resolver problemas.</p>
-    
-      <h2 class="number-title"> Algoritmo</h2>
+    </div>
+        <div class="nota-box"><h2 class="number-title"> Algoritmo</h2>
     <p>A estas alturas es importante definir el concepto de <em>algoritmo</em>. El nombre procede del matemático persa
       <b>Abu Ja’far Mohammed ibn Musa al-Jowârizmî</b>,  muy conocido durante la Edad Media por sentar las bases del Álgebra.</p>
       
@@ -184,10 +179,10 @@
             <img src="../Imagenes/Secciones_algoritmo.JPG" alt="", width="auto" height="auto">
         </div>
     </p>
+    </div>
+      
     
-       
-    
-    <h2 class="number-title"> Construccion del algoritmo</h2>
+    <div class="nota-box"><h2 class="number-title"> Construccion del algoritmo</h2>
     <p>
       Durante la etapa <b>diseño del algoritmo</b>  hay que indicar la serie de  acciones para llevar a cabo  
        la tarea solicitada o resolver el problema planteado,  lo que se traduce en la <b>construcción de un algoritmo</b>. 
@@ -204,45 +199,41 @@
       y depure el programa. El resultado final del diseño es una solución que debe ser fácil de traducir a <em>estructuras de datos</em> y <em>estructuras
       de control</em> de un <b>lenguaje de programación</b> específico.
     </p>
-    
-    
-    
-    
-      <HR>
-    
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
+      <p>Escriba un algoritmo para determinar la suma de todos los números pares entre  $1$ y $1\,000$.</p>
       
-        <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar la suma de todos los números pares 
-          entre  $1$ y $1\,000$.<br>
-          <p><em><b>Análisis del problema:</b></em> El problema consiste en sumar $2 + 4 + 6 + 8+ \cdots + 1\, 000$. 
+      <p><em><b>Análisis del problema:</b></em> El problema consiste en sumar $2 + 4 + 6 + 8+ \cdots + 1\, 000$. 
             Definiremos dos nuevas variables auxiliares para resolver el problema,  $Sum$ y $Num$, la variable $Sum$ representará  las sumas 
             sucesivas $(2+4), (2+4+6), (2+4+6+8), \ldots$. Mientras que $Num$ denotará el número par a sumar.</p>
             <button class="respButton hvr-grow ">  Solución       </button>
-            <div class="resp-box flexbox_">
-              <div class="flexbox_">  
-           <ol>
-           <li>Inicio</li>
-           <li>Hacer $Sum$ igual a $0$</li>
-           <li>Hacer $Num$ igual a $2$</li>
-           <li>Sumar $Num$ a $Sum$ y actualizar el valor de $Sum$ a este resultado, i.e. El nuevo valor de $Sum$ es 
-             el valor previo de $Sum$ más $Num$. </li>
-           <li>Incrementar $Num$ en 2 unidades.</li>
-           <li>Si $Num$ es menor o igual que $1\,000$, entonces ir al paso 4. En caso contrario escribe 
-            el último valor que tiene  $Sum$. </li>
-           <li>Fin</li>
-          </ol>
-          </div>
+            <div class="resp-box flexbox">
+              <div class="flexbox">  
+            <ol>
+            <li>Inicio</li>
+            <li>Hacer $Sum$ igual a $0$</li>
+            <li>Hacer $Num$ igual a $2$</li>
+            <li>Sumar $Num$ a $Sum$ y actualizar el valor de $Sum$ a este resultado, i.e. El nuevo valor de $Sum$ es 
+              el valor previo de $Sum$ más $Num$. </li>
+            <li>Incrementar $Num$ en 2 unidades.</li>
+            <li>Si $Num$ es menor o igual que $1\,000$, entonces ir al paso 4. En caso contrario escribe 
+              el último valor que tiene  $Sum$. </li>
+            <li>Fin</li>
+            </ol>
             </div>
-    
-        <!-- <ul>
-           <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
-           <li>Decidir si un número es primo.</li>
-           <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
-         </ul>-->  
-        </p> 
-    
-    <HR>
-        
-        <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar si un número entero positivo $p$
+              </div>
+      
+          <!-- <ul>
+            <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+            <li>Decidir si un número es primo.</li>
+            <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+          </ul>-->  
+          </p> 
+    </div>
+          
+    <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
+        <p>Escriba un algoritmo para determinar si un número entero positivo $p$
           es primo o no.<br>
           <p><em><b>Datos:</b></em> &nbsp;  $p$<br>
           Donde:&nbsp; &nbsp; &nbsp; $p$ es un entero positivo
@@ -272,22 +263,20 @@
            <li>Fin</li>
           </ol>
           </div>
-          
         </div>
-    
-     
-        
+       
+        </p></div>
     
         <!-- <ul>
            <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
            <li>Decidir si un número es primo.</li>
            <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
          </ul>-->  
-        </p> 
-    
-    <HR>
-    
-      <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar si un número entero positivo $p$
+        
+        
+        
+    <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
+        <p>Escriba un algoritmo para determinar si un número entero positivo $p$
         es primo o no.<br>
         <p><em><b>Datos:</b></em> &nbsp;  $p$<br>
         Donde:&nbsp; &nbsp; &nbsp; $p$ es un entero positivo
@@ -322,11 +311,10 @@
         
       </div>  
     </p>
-    
-    <HR>
-    
-      
-    <p><b><u>Observación:</u></b> No existen reglas específicas que nos permitan resolver un problema. Sin embargo, es posible  ofrecer un
+    </div>
+
+    <div class="nota-box"><h2 class="number-title">Observación</h2>
+    <p> No existen reglas específicas que nos permitan resolver un problema. Sin embargo, es posible  ofrecer un
       conjunto de técnicas y herramientas metodológicas que permitan flexibilizar y estructurar el razonamiento
       utilizado en la solución de un problema. Obteniendo finalmente la construcción de algoritmos eficientes.
     </p>
