@@ -39,12 +39,12 @@
 html, body{
   margin: 0;
   padding: 4%;
-  /* font-family: "Quicksand"; */
+  font-family: "Quicksand";
   
   /* font-family: 'Noto Serif Tangut', serif; */
   /* font-family: 'GFS Neohellenic', sans-serif; */
   /* font-family: 'Neucha', cursive; */
-  font-family: 'Oldenburg', cursive;
+  /* font-family: 'Oldenburg', cursive; */
   /* font-family: 'Dosis', sans-serif; */
   /* font-family: 'Urbanist', sans-serif; */
   /* font-family: 'Space Mono', monospace; */
