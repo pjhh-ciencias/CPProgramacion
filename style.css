@@ -319,7 +319,7 @@ h1.title{
   content:" ";
   color: rgb(0, 77, 179);
 }
-
+/* 
 .secciones-main ul{
   margin: 0;
   padding: 10px;
@@ -334,7 +334,7 @@ h1.title{
   padding: 10px;
   font-size: 30px;
   text-decoration: none;
-}
+} */
 
 img.wmargen {
   margin-top:-120px;
@@ -802,47 +802,109 @@ li {
 
 /* Para listas anidadas  */
 
-ol.anidada li{
+
+
+.lista li{ 
   counter-increment: listaCounter;
-}
+  /* font-weight: bold; */
+  /*counter-reset: sublistaCounter; */
+} 
 
 
-
-ol.anidada li::marker{
+.lista li::marker{
   font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 18px;
+  font-size: 22px;
   /* color: rgb(211, 40, 40); */
 }
 
+/* .lista li::after{  */
+  /* counter-increment: listaCounter; */
+  /*counter-reset: sublistaCounter; */
+/* }  */
 
-ol.anidada2 {
+.sublista {
+  counter-reset: sublistaCounter;
   list-style-type: none; /* Quita los números de las listas ordenadas */
 }
 
-ol.anidada2 li::marker{
-  font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 18px;
-  color: rgb(211, 40, 40);
+.sublista li{
+  counter-increment: sublistaCounter;
 }
 
-ol.anidada2{
-  /* font-weight: bold; */
+.sublista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
   font-size: 18px;
   /* color: rgb(211, 40, 40); */
 }
 
-
-ol.anidada2 li::before{
+.sublista li::before{
   font-weight: bold;
-  content: " " counter(listaCounter)"."counter(sublistaCounter)".-";
-  counter-increment: sublistaCounter;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)".- ";
+  /* counter-increment: sublistaCounter; */
 }
 
-
-ol.anidada2 ol li::after{
+.sublista li::after{
   /* font-weight: bold; */
   content: " "
 }
+
+/* Subsubistas */
+
+
+.subsublista {
+  counter-reset: subsublistaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+.subsublista li{
+  counter-increment: subsublistaCounter;
+}
+
+.subsublista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  font-size: 18px;
+  /* color: rgb(211, 40, 40); */
+}
+
+.subsublista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)"."counter(subsublistaCounter)".- ";
+  /* counter-increment: sublistaCounter; */
+}
+
+.subsublista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
+/* Subsubsublista */
+
+.subsubsublista{
+  counter-reset: subsubsublistaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+.subsubsublista li{
+  counter-increment: subsubsublistaCounter;
+}
+
+.subsubsublista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  font-size: 18px;
+  /* color: rgb(211, 40, 40); */
+}
+
+.subsubsublista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)"."counter(subsublistaCounter)"."counter(subsubsublistaCounter)".- ";
+  /* counter-increment: sublistaCounter; */
+}
+
+.subsubsublista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
 /* 
 h1.number-title-practica{
   

@@ -44,9 +44,12 @@
     
     <!-- This part restart counter of cards to start at n+1 -->
     <style>
-    ol.anidada{
-        counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
       }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
     </style>
 
     <!-- CSS -->
@@ -102,115 +105,127 @@
           </div>
         </div>
 
-        <div class="info-box" style = "font-family: 'Oldenburg', cursive;"><h1 class="title">Temario</h1>
-         
-      <ul>
+      <div class="info-box" style = "font-family: 'Oldenburg', cursive;"><h1 class="title">Temario</h1>
+
+      <ol class="lista" >
           <li><b><font size="5">Etapas en la resolución de un problema</font></b></li>
-          <ol>
-            <li>Definición o análisis del problema</li>
-            <li>Diseño del algoritmo</li>
-            <li>Transformación del algoritmo en un programa</li>
-            <li>Ejecución y validación del programa</li>
-          </ol><br>
+            <ol class="sublista">
+              <li>Definición o análisis del problema</li>
+              <li>Diseño del algoritmo</li>
+              <li>Transformación del algoritmo en un programa</li>
+              <li>Ejecución y validación del programa</li>
+            </ol>
 
           <!-- <li><b><font size="5">Definición o análisis del problema</font></b></li>-->
-          <li><b><font size="5">Diseño de algoritmos</font></b></li>
-            <ol>
-              <li>Algoritmos</li>
-              <ul>
-                <li>Construcción de algoritmos</li>
-                <ul>
-                  <li>Diagrama de flujo</li>
-                  <li>Pseudocódigo</li>
-                </ul>
-              </ul>
+          <li ><b><font size="5">Diseño de algoritmos</font></b></li>
+            <!-- <ol class="sublista"> -->
+              <!-- <li>Algoritmos</li> -->
+                <ol class="sublista">
+                  <li>Construcción de algoritmos</li>
+                    <ol class="subsublista">
+                      <li>Diagrama de flujo</li>
+                      <li>Pseudocódigo</li>
+                    </ol>
+                </ol>
 
-              <li>Diagramas de flujo</li>
-              <ul>
-                <li>Construcción de diagramas de flujo</li>
-                <li>Reglas para la construcción de diagramas de flujo</li>
-              </ul>
+          <li><b><font size="5">Diagramas de flujo</font></b></li>
+            <ol class="sublista">
+              <li>Construcción de diagramas de flujo</li>
+              <li>Reglas para la construcción de diagramas de flujo</li>
+            </ol>
 
-              <!-- <li>Pseudocódigo</li>
-              <ul>
-                <li>Diseño de pseudocódigos</li>
-                <li>Reglas para el diseño de pseudocódigos</li>
-              </ul> -->
+      <!-- <li>Pseudocódigo</li>
+            <ul>
+              <li>Diseño de pseudocódigos</li>
+              <li>Reglas para el diseño de pseudocódigos</li>
+            </ul> -->
 
-              <li>Tipos de dato: Simples y estructurados</li>
-                <ul>
-                  <li>Datos númericos</li>
-                  <li>Datos alfanúmericos</li>
-                  <li>Datos lógicos</li>
-                </ul>
+          <li><b><font size="5">Tipos de dato: Simples y estructurados</font></b></li>
+            <ol class="sublista">
+              <li>Datos númericos</li>
+              <li>Datos alfanúmericos</li>
+              <li>Datos lógicos</li>
+            </ol>
 
-              <li>Identificadores, constantes y variables</li>
+          <li><b><font size="5">Identificadores, constantes y variables</font></b></li>
               
-              <li>Operadores</li>
-                <ul>  
-                  <li>Operadores aritméticos</li>
-                  <!-- <li>Expresiones lógicas</li>-->
-                  <li>Operadores relacionales</li>
-                  <li>Operadores lógicos</li>
-                </ul>
-              <!-- <li>Bloque de asignación</li>-->
-            </ol><br>
-            <li><b><font size="5">Introducción a PSeInt</font></b></li>
-            <ol>
-              <li>Una introducción a PSeInt</li>
-              <li> Funciones matemáticas en PSeInt</li>
-              <li>Estucturas de control</li>
-              <ul>
-                <li>Estructuras secuenciales</li>
-                <li>Estructuras selectivas</li>
-                <li>Estructuras repetitivas</li>                  
-              </ul>
-              <li>Estructuras selectivas</li>
-              <ul>
-                <li>If-Else</li>
-                <li>Switch</li>
-              </ul>
-              <li>Estructuras repetitivas</li>
-              <ul>
-                <li>For</li>
-                <li>While</li>
-                <li>Do-While</li>
-              </ul>
-              <li>Estructuras de control anidadas</li>
-              <li>Funciones para cadenas de texto</li>
+          <li><b><font size="5">Operadores</font></b></li>
+            <ol class="sublista">  
+              <li>Operadores aritméticos</li>
+              <!-- <li>Expresiones lógicas</li>-->
+              <li>Operadores relacionales</li>
+              <li>Operadores lógicos</li>
+            </ol>
+          <!-- <li>Bloque de asignación</li>-->
+            <!-- </ol> -->
+
+          <!-- <li><b><font size="5">Introducción a PSeInt</font></b></li> -->
+            <!-- <ol class="sublista"> -->
+              <!-- <li>Una introducción a PSeInt</li> -->
+              <!-- <li> Funciones matemáticas en PSeInt</li> -->
+              <li><b><font size="5">Estucturas de control</font></b></li>
+                <ol class="sublista">
+                  <li>Estructuras secuenciales</li>
+                  <li>Estructuras selectivas</li>
+                  <li>Estructuras repetitivas</li>                  
+                </ol>
+
+              <li><b><font size="5">Estructuras selectivas</font></b></li>
+                <ol class="sublista">
+                  <li>If-Else</li>
+                  <li>Switch</li>
+                </ol>
+              <li><b><font size="5">Estructuras repetitivas</font></b></li>
+                <ol class="sublista">
+                  <li>For</li>
+                  <li>While</li>
+                  <li>Do-While</li>
+                </ol>
+              <li><b><font size="5">Estructuras de control anidadas</font></b></li>
+              <!-- <li>Funciones para cadenas de texto</li>
               <li>Funciones o subprocesos</li>
               <li>Arreglos</li>
-              <ul>
-                <li>Vectores</li>
-                <li>Matrices</li>
-              </ul>
-              <li>Recursividad</li>
+                <ul>
+                  <li>Vectores</li>
+                  <li>Matrices</li>
+                </ul>
+              <li>Recursividad</li> -->
             </ol>
-            
-          </ol>
-
-<p>
-          <ol class="anidada">
+      </ol>
+<!-- 
+          <ol class="lista">
             <li>Elemento 1</li>
-            <ol class="anidada2">
+            <ol class="sublista">
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
               <li>subelemento</li>
               <li>subelemento</li>
-              <li>subelemento</li>
-              <li>subelemento</li>
-
             </ol>
             <li>Elemento 2</li>
-            <ol class="anidada2">
+            <ol class="sublista">
               <li>subelemento</li>
               <li>subelemento</li>
               <li>subelemento</li>
               <li>subelemento</li>
             </ol>
             <li>Elemento 3</li>
-          </ol>
-        </div>
+          </ol> -->
+        
+      
+      </div>
 
-      </p>
         
 
 
