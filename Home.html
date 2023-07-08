@@ -41,6 +41,13 @@
         }
     };
     </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    ol.anidada{
+        counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
+      }
+    </style>
 
     <!-- CSS -->
 
@@ -181,9 +188,29 @@
             </ol>
             
           </ol>
+
+<p>
+          <ol class="anidada">
+            <li>Elemento 1</li>
+            <ol class="anidada2">
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+
+            </ol>
+            <li>Elemento 2</li>
+            <ol class="anidada2">
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 3</li>
+          </ol>
         </div>
 
-
+      </p>
         
 
 

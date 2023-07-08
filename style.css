@@ -344,6 +344,7 @@ img.wmargen {
  /* /////////////   for numbering /////////////////////////*/
 body.card{
     counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+    counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
           }
 
 h1.page-title{
@@ -392,7 +393,7 @@ h1.number-title{
   color: rgb(3, 89, 165); 
 }
 
-h1.number-title:before{
+h1.number-title::before{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
@@ -407,7 +408,7 @@ h2.number-title{
   color: rgb(3, 89, 165); 
 }
 
-h2.number-title:before{
+h2.number-title::before{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;
   counter-increment: subsectionCounter;
@@ -444,7 +445,7 @@ h1.number-title-practica{
   color: rgb(3, 89, 165); 
 }
 
-h1.number-title-practica:after{
+h1.number-title-practica::after{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
@@ -512,20 +513,6 @@ h1.number-title-practica:after{
   box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
-.definicion-box-dark{
-  background:  rgb(  33, 47, 60  );
-  color:  rgb( 165, 105, 189 );
-  border-radius: 25px;
-  padding: 20px;
-  border: 10px  solid rgba(229,180,255,0.5);
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 20px;
-  font-family:  "Lucida Console" Courier monospace;
-  width: 70%;
-  box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
 
 .ejercicio-box{ 
   background:  rgb(218, 237, 245);
@@ -541,20 +528,6 @@ h1.number-title-practica:after{
   box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
 }
 
-/* 
-.ejercicio-box-dark{
-  background:  rgb(  33, 47, 60  );
-  color:  rgb( 165, 105, 189 );
-  border-radius: 25px;
-  padding: 20px;
-  border: 10px solid rgba(92,213,241,0.5);
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 20px;
-  width: 70%;
-  box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-} */
 
 .nota-box{
     /* background:  rgb(218, 237, 245); */
@@ -573,47 +546,7 @@ h1.number-title-practica:after{
     width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 
-  /* background:  rgb(218, 237, 245);
-    color: black;
-    border-radius: 20px;
-    padding: 50px;
-    border: 5px solid  rgb(0, 120, 175);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 21px;
-    width: 90%;
-    box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201); */
-
-  /*
-    background:  rgb( 255, 249, 205 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgba(255,206,102,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-    */
 }
-
-/* 
-.nota-box-dark{
-    background:  rgb(  33, 47, 60  );
-    color:  rgb( 165, 105, 189 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgba(255,206,102,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
- */
 
 .teorema-box{
   background:  rgb(218, 237, 245);
@@ -626,35 +559,8 @@ h1.number-title-practica:after{
   margin-top: 50px;
   font-size: 20px;
   width: 80%;
-  box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
-  /*
-    background:  rgb( 255, 249, 205 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgb(251,161,255,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );*/
-}
-
-/* 
-.teorema-box-dark{
-    background:  rgb(  33, 47, 60  );
-    color:  rgb( 165, 105, 189 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgb(251,161,255,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-} */
-
+  box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);  
+  }
 
 .resp-box{
   display: none;
@@ -728,8 +634,6 @@ h1.number-title-practica:after{
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
-
-
 .quiz-box-dark{
     background:  rgb(  33, 47, 60  );
     color:  rgb( 165, 105, 189 );
@@ -743,7 +647,6 @@ h1.number-title-practica:after{
     width: 70%;
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
-
 
 .algoritmo-box{
   background:  rgb(218, 237, 245);
@@ -883,19 +786,75 @@ tr:nth-child(odd) {
 
 
 /*//// Listas//////*/
-/*
-ol {
-  list-style: none;
-  counter-reset: my-counter;
-}
-ol li {
-  counter-increment: my-counter;
-  padding: 1px;
+
+
+ol li::marker {
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  font-size: 18px;
+  /* color: rgb(211, 40, 40); */
 }
 
-ol li::before {
-  content:  counter(my-counter) ".- ";
-  color: rgb(0, 0, 0);
+li {
+  padding: 2px; /* Espacio interno de 10 píxeles alrededor del elemento de la lista */
+  /* margin: 1px;  */
+}
+
+
+/* Para listas anidadas  */
+
+ol.anidada li{
+  counter-increment: listaCounter;
+}
+
+
+
+ol.anidada li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  font-size: 18px;
+  /* color: rgb(211, 40, 40); */
+}
+
+
+ol.anidada2 {
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+ol.anidada2 li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  font-size: 18px;
+  color: rgb(211, 40, 40);
+}
+
+ol.anidada2{
+  /* font-weight: bold; */
+  font-size: 18px;
+  /* color: rgb(211, 40, 40); */
+}
+
+
+ol.anidada2 li::before{
   font-weight: bold;
-  font-size: 20px;
-}*/
+  content: " " counter(listaCounter)"."counter(sublistaCounter)".-";
+  counter-increment: sublistaCounter;
+}
+
+
+ol.anidada2 ol li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+/* 
+h1.number-title-practica{
+  
+  font-family: 'Hina Mincho', serif;
+  
+  color: rgb(3, 89, 165); 
+}
+
+h1.number-title-practica:after{
+  
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: sectionCounter;
+  content: " " counter(semanaCounter)"."counter(sectionCounter) ".";
+}
+*/
