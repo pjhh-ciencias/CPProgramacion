@@ -466,7 +466,7 @@ h1.number-title-practica::after{
     margin: auto; 
     margin-top: 50px;
     font-size: 19.5px;
-    width: 80%;
+    width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 }
 
@@ -481,7 +481,7 @@ h1.number-title-practica::after{
     margin-top: 50px;
     font-size: 20px;
     font-size: 21.5px;
-    width: 80%;
+    width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 }
 
@@ -534,7 +534,7 @@ h1.number-title-practica::after{
     background: rgb(252, 252, 244);
     color: black;
     border-radius: 20px;
-    padding: 3%;
+    padding: 5%;
     border: 0px solid  rgb(218,165,32);
     margin: auto;
     margin-bottom: 50px;
@@ -788,10 +788,10 @@ tr:nth-child(odd) {
 /*//// Listas//////*/
 
 
-ol li::marker {
+ol li::marker{
   font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 18px;
-  /* color: rgb(211, 40, 40); */
+  font-size: 17px;
+  /* /* color: rgb(211, 40, 40);  */
 }
 
 li {
@@ -803,17 +803,41 @@ li {
 /* Para listas anidadas  */
 
 
+.lista {
+  counter-reset: listaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
 
 .lista li{ 
   counter-increment: listaCounter;
   /* font-weight: bold; */
   /*counter-reset: sublistaCounter; */
+  padding: 1px;
+  /* font-size: 20px; */
 } 
+
 
 
 .lista li::marker{
   font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 22px;
+  /* font-size: 17px; */
+  /* color: rgb(211, 40, 40); */
+}
+
+.lista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)".-";
+  /* counter-increment: sublistaCounter; */
+}
+
+.lista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
+.lista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  /* font-size: 17px; */
   /* color: rgb(211, 40, 40); */
 }
 
@@ -833,7 +857,7 @@ li {
 
 .sublista li::marker{
   font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 18px;
+  /* font-size: 17px; */
   /* color: rgb(211, 40, 40); */
 }
 
@@ -862,7 +886,7 @@ li {
 
 .subsublista li::marker{
   font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 18px;
+  /* font-size: 17px; */
   /* color: rgb(211, 40, 40); */
 }
 
@@ -890,7 +914,7 @@ li {
 
 .subsubsublista li::marker{
   font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 18px;
+  /* font-size: 18px; */
   /* color: rgb(211, 40, 40); */
 }
 
