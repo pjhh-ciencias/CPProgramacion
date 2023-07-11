@@ -465,7 +465,7 @@ h1.number-title-practica::after{
     border: 0px solid  rgb(218,165,32);
     margin: auto; 
     margin-top: 50px;
-    font-size: 19.5px;
+    font-size: 20px;
     width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 }
@@ -789,8 +789,8 @@ tr:nth-child(odd) {
 
 
 ol li::marker{
-  font-weight: bold; /* Aplica negrita al marcador (número) */
-  font-size: 17px;
+  font-weight: bold; 
+  /* font-size: 17px; */
   /* /* color: rgb(211, 40, 40);  */
 }
 
@@ -812,14 +812,14 @@ li {
   counter-increment: listaCounter;
   /* font-weight: bold; */
   /*counter-reset: sublistaCounter; */
-  padding: 1px;
+  padding: 1.25px;
   /* font-size: 20px; */
 } 
 
 
 
 .lista li::marker{
-  font-weight: bold; /* Aplica negrita al marcador (número) */
+  font-weight: bold;
   /* font-size: 17px; */
   /* color: rgb(211, 40, 40); */
 }
