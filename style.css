@@ -470,6 +470,35 @@ h1.number-title-practica::after{
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 }
 
+.notas-box{
+  /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
+    color: black;
+    border-radius: 20px;
+    padding: 50px;
+    border: 0px solid  rgb(218,165,32);
+    margin: auto; 
+    margin-top: 50px;
+    font-size: 25px;
+    width: 85%;
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
+}
+
+.notas-box a{
+  /* content:" "; */
+  padding: 1%;
+  /* color:  rgba(255, 157, 0, 0.867); */
+  /* color: rgba(0, 136, 255, 0.682); */
+  text-decoration: none;
+  width: 100%;
+}
+
+.notas-box a::visited {
+  text-decoration: none;
+  /* color: rgb(3, 89, 165);  */
+  margin-top: 1%;
+}
+
 .info-profesor-box{
   /* background:  rgb(218, 237, 245); */
     background: rgb(252, 252, 244);
@@ -792,11 +821,6 @@ ol li::marker{
   font-weight: bold; 
   /* font-size: 17px; */
   /* /* color: rgb(211, 40, 40);  */
-}
-
-li {
-  padding: 2px; /* Espacio interno de 10 píxeles alrededor del elemento de la lista */
-  /* margin: 1px;  */
 }
 
 
