@@ -491,7 +491,7 @@ h1.number-title-practica::after{
 }
 
 .links-box a{ 
-  padding: 20px;
+  padding: 10px;
   font-weight: 500;
   /*color:  rgba(14, 137, 253, 0.801);*/
   color:  rgb(255, 0, 0); 
