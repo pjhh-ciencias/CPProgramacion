@@ -493,6 +493,47 @@ h1.number-title-practica::after{
 
 .notas-box a{ 
   padding: 1.5%;
+  /*color:  rgba(14, 137, 253, 0.801);*/
+  color:  rgb(255, 0, 0); 
+
+}
+
+.notas-box a:visited{
+  color:  rgb(0, 0, 139); 
+  /* color:  rgba(14, 137, 253, 0.801); */
+}
+
+
+.practicas-box{
+  /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5%;
+    color: black;
+    border-radius: 20px;
+    padding: 50px;
+    border: 0px solid  rgb(218,165,32);
+    margin: auto; 
+    /* margin-top: 50px; */
+    font-size: 26px;
+    width: 85%;
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.practicas-box a{ 
+  padding: 1.5%;
+  /*color:  rgba(14, 137, 253, 0.801);*/
+  color:  rgb(255, 0, 0); 
+
+}
+
+.practicas-box a:visited{
+  color:  rgb(0, 0, 139); 
+  /* color:  rgba(14, 137, 253, 0.801); */
 }
 
 
