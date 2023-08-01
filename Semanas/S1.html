@@ -97,24 +97,24 @@
       <h1 class="page-subtitle">Etapas en la solución de un problema</h1>   
       <div class="nota-box"><h1 class="number-title"> Introducción</h1>  
       <p>
-        El proceso de <b>resolución de un problema</b> mediante una computadora abarca desde la <em>descripción inicial del
+        El proceso de <b>resolución de un problema</b> mediante una computadora comprende desde la <em>descripción inicial del
         problema</em> hasta el <em>desarrollo de un programa</em>  de computadora que lo resuelva.</b> 
       </p>
     
-      <p>En la siguiente figura se resume las etapas que debemos seguir para solucionar algún problema:</p> 
+      <p>En general, las etapas que debemos seguir para <em><b>solucionar algún problema</b></em> son:</p> 
     
         <p>
           <div class="flexbox">
-              <img src="../Imagenes/Etapas_solucion_problema.JPG" alt="", width="auto" height="auto">
+              <img src="../Imagenes/Etapas_solucion_problema_.jpg" alt="", width="100%" height="auto">
           </div>
       </p>
     
-       <p>El proceso de diseño de un <em>programa</em>  tiene una serie de etapas que generalmente deben
+       <p>El proceso de <em><b>diseño de un programa</b></em>  tiene una serie de etapas que generalmente deben
         seguir todos los <em>programadores</em>:
         <ol>
-          <li><b>Definición o análisis del problema</b>,</li>
-          <li><b>Diseño del algoritmo</b>,</li>
-          <li><b>Transformación del algoritmo en un programa</b>,</li>
+          <li><b>Definición o análisis del problema</b>.</li>
+          <li><b>Diseño del algoritmo</b>.</li>
+          <li><b>Transformación del algoritmo en un programa</b>.</li>
           <li><b>Ejecución y validación del programa</b>.</li>
         </ol>
        </p>  
@@ -132,11 +132,11 @@
       <p>En esta etapa también tenemos que especificar claramente aquella información que es  necesaria para
          la resolución del problema. Para hacer el análisis es de gran utilidad  responder  a las siguientes preguntas:<br>
           <ul>
-            <li><b>¿Qué <em>datos(información) de entrada(s)</em> tiene el problema?</b>,</li>
-            <li><b>¿Cuál es la <em>salida</em> deseada?</b>,</li>
+            <li><b>¿Qué <em>datos(información) de entrada(s)</em> tiene el problema?</b></li>
+            <li><b>¿Cuál es la <em>salida</em> deseada?</b></li>
             <li><b>¿Qué <em>método</em> produce la salida deseada a partir de los datos de entrada?</b></li>
           </ul>
-        </p>
+      </p>
     </div>
       
     <div class="nota-box"><h1 class="number-title"> Diseño del algoritmo</h1> 
@@ -144,12 +144,12 @@
       <p>Casi inconscientemente, los humanos efectuamos cotidianamente una serie de pasos, procedimientos o acciones que nos permiten
         <b>alcanzar un resultado</b> o <b>resolver un problema</b>. <!-- Continuamente seguimos una serie de pasos o conjunto de acciones que nos
         permiten alcanzar un resultado -->Esta serie de pasos, procedimientos o acciones, comenzamos a aplicarlas desde que
-        empieza el día, cuando, por ejemplo, <b>tomar un bañar</b>. Luego, tenemos que continuar con una serie de pasos que 
-        nos permitan alcanzar otro resultado específico: <b>desayunar</b>. La historia se repite innumerables veces durante 
+        empieza el día, por ejemplo cuando <b>tomamos un baño</b>.<!--  O bien, por ejemplo realizamos una serie de pasos que 
+        nos permitan alcanzar otro resultado específico: <b>desayunar</b>.--> La historia se repite innumerables veces durante  
         el día. En realidad todo el tiempo estamos aplicando <em>algoritmos</em> para resolver problemas.</p>
     </div>
         <div class="nota-box"><h2 class="number-title"> Algoritmo</h2>
-    <p>A estas alturas es importante definir el concepto de <em>algoritmo</em>. El nombre procede del matemático persa
+    <p>A estas alturas es importante definir el concepto de <em><b>algoritmo</b></em>. El nombre procede del matemático persa
       <b>Abu Ja’far Mohammed ibn Musa al-Jowârizmî</b>,  muy conocido durante la Edad Media por sentar las bases del Álgebra.</p>
       
     <p><b><u>Definición:</u></b> Un <b>algoritmo</b> es un conjunto ordenado de pasos ejecutables que permiten obtener un resultado determinado a 
@@ -161,7 +161,7 @@
           arbitrariamente grande.
          </li><br>
          <li>
-          <b>Definibilidad:</b> Cada paso del algoritmo debe definirse de modo preciso. Las acciones del algoritmo 
+          <b>Definibilidad:</b> Cada paso del algoritmo debe definirse de modo claro y preciso. Las acciones del algoritmo 
           deben estar expresadas sin ambigüedad.
          </li><br>
          <li>
@@ -180,11 +180,14 @@
         </div>
     </p>
     </div>
+
+    
       
     
     <div class="nota-box"><h2 class="number-title"> Construccion del algoritmo</h2>
+      
     <p>
-      Durante la etapa <b>diseño del algoritmo</b>  hay que indicar la serie de  acciones para llevar a cabo  
+      Durante la etapa de <em><b>diseño del algoritmo</b></em>  hay que indicar la serie de  acciones para llevar a cabo  
        la tarea solicitada o resolver el problema planteado,  lo que se traduce en la <b>construcción de un algoritmo</b>. 
        Los métodos más eficaces se basan en la técnica <b><em>divide y vencerás</em></b>:
     </p>
@@ -200,6 +203,58 @@
       de control</em> de un <b>lenguaje de programación</b> específico.
     </p>
     </div>
+
+
+    <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
+      <p><em><b>Análisis del problema:</b></em>  </p>
+      <p>Escriba un algoritmo para determinar si un número entero positivo $n$ es par o impar.</p>
+      
+      
+            <button class="respButton hvr-grow ">  Solución       </button>
+            <div class="resp-box flexbox">
+              <div class="flexbox">  
+            <ol>
+            <li>Inicio</li>
+            <li>Dividir $n$ entre $2$</li>
+            <li>Si el residuo de la división es cero, el número es par; de lo contrario, es impar.</li>
+            <li>Fin</li>
+            </ol>
+            </div>
+              </div>
+      
+          <!-- <ul>
+            <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+            <li>Decidir si un número es primo.</li>
+            <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+          </ul>-->  
+          </p> 
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
+      <p>Escriba un algoritmo para determinar si un número $n$ dado es positivo, negativo o cero</p>
+      
+      <p><em><b>Análisis del problema:</b></em> El problema consiste en comparar el número $n$ con el cero.</p>
+            <button class="respButton hvr-grow ">  Solución       </button>
+            <div class="resp-box flexbox">
+              <div class="flexbox">  
+            <ol>
+            <li>Inicio</li>
+            <li>Si $n>0$, entonces $n$ es un número positivo. </li>
+            <li>Si $n< 0$, entonces $n$ es un número negativo. </li>
+            <li>Si $n=0$, entonces $n$ es el número cero. </li>
+            <li>Fin</li>
+            </ol>
+            </div>
+              </div>
+      
+          <!-- <ul>
+            <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+            <li>Decidir si un número es primo.</li>
+            <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+          </ul>-->  
+          </p> 
+    </div>
+
 
     <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
       <p>Escriba un algoritmo para determinar la suma de todos los números pares entre  $1$ y $1\,000$.</p>
