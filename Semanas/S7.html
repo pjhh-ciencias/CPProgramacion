@@ -49,7 +49,7 @@
         counter-reset: sectionCounter 1 subsectioncounter ;
       } */
       h1.page-title{
-        counter-reset: semanaCounter 6 sectionCounter  subsectionCounter;
+        counter-reset: semanaCounter 7 sectionCounter  subsectionCounter;
       }
     </style>
 
@@ -94,21 +94,187 @@
 
       <!-- This part is for title in tab-->
             
-      <title>Semana 6</title>
+      <title>Semana 7</title>
       </head>  
 
 
 
-    <body class="fondo-body" ><h1 class="page-title"> Semana 6 </h1>
-      
-    <h1 class="page-subtitle">Practicando en PseInt</h1> 
+    <body class="fondo-body" ><h1 class="page-title"> Semana 7 </h1>
 
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario que escriba su nombre,
-        e imprima un  saludo llamándolo por su nombre. Por ejemplo:
-        <center>"¡Hola Pablo!"</center>
+
+    <!-- <h1 class="page-subtitle"><p>Estructura condicional:
+        Según (<em>switch</em>)</p>
+    </h1>  -->
+       
+    <div class="nota-box"><h1 class="number-title"> Estructura condicional:
+      Según (<em>switch</em>)</h1>
+      <p>La estructura condicional <em>if</em> nos proporciona, únicamente dos resultados,
+        uno para cuando es verdadero y otro para cuando es falso. La estructura <em>según</em>,
+        por su parte nos permite elegir entre muchas opciones.</p>
+
+        <p>
+
+        </p>
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Características</h2>
+      <ol>
+        <li>Esta estructura nos permite ejecutar una de entre un conjunto de alternativas,
+          con base en el valor almacenado en una <b>variable de tipo númerico</b> 
+          llamada <b><em>selector</em></b>.</li>
+        <li>No tiene sentido usar un selector para una variable como por ejemplo sexo ($1$; hombre, $2$: Mujer),
+           en este caso es más óptimo y eficiente la estructura selectiva $if$ pero para una variable como 
+           carrera (1: 'Economía', 2: 'Turismo'. 3: 'Comunicación', 4:'Relaciones internacionales', 5: 'Actuaria') 
+           es más recomendable  usar un selector.</li>
+        <li>El selector debe ser una variable que toma más de dos valores  enteros $1, 2, 3 ,\ldots N$ y
+           dependiendo de ese valor se ejecute ciertas instrucciones. 
+        </li>
+        <li>Se evalua el contenido del <em>selector</em> y se ejecuta la secuencia de instrucciones asociadas 
+          con dicho valor. </li>
+        <li>La secuencia de instrucciones ejecutada por una instrucción <em>Según</em> depende del valor de
+           una variable numérica.</li>
+        <li>Cada opción está formada por uno o más números separados por comas.</li>
+        <li>Opcionalmente, se puede agregar una opción final, llamada <b><em>De otro modo</em></b>, cuya secuencia 
+          de instrucciones asociada se ejecutara sólo si el valor almacenado en la variable no coincide 
+          con ninguna de las opciones anteriores.</li>
+      </ol>
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Sintaxis sentencia <em>según</em></h2>
+
+      <p>En general, la sintaxis de la sentencia <em>según</em> es:</p>
+
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/estructura_segun_general.png" alt="", width="70%" height="auto">
+        </div>
       </p>
-      Crear un algoritmo que permita obtener y mostrar la cantidad de dígi-
-tos de un número ingresado, sabiendo que el máximo permitido es 4.
+
+      <p>Donde <em>selector</em> es una variable de tipo númerico y $n_1,n_2,n_3,n_4,n_5, n_6$ son 
+        valores que toma la variable <em>selector</em></p>
+      <p>Enseguida se presenta un ejemplo más especifico sobre el uso de la sentencia <em>según</em> :</p>
+      
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/estructura_segun.png" alt="", width="70%" height="auto">
+        </div>
+      </p>
+     </div>
+
+
+
+    <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+      <p>Construye el  diagrama de flujo de un algoritmo que  solicite el salario de un profesor del SUNEO,
+        y calcule el incremento del salario de acuerdo con el siguiente criterio e imprima el nuevo salario
+        del profesor.
+        \begin{equation}
+        \begin{cases}
+        Salario < \$12\,000,&  \text{ Incremento del } 15\%. \\
+        \$12\,000 \leq Salario < \$15\,000,& \text{ incremento del } 12\%. \\
+        \$15\,000 \leq Salario < $18\,000,& \text{ incremento del } 8\%. \\
+        $18\,000  \leq  Salario,&  \text{ incremento del } 5\%.\\
+        \end{cases} 
+        \end{equation}
+      </p>       
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+      <p>Construye el  diagrama de flujo de un algoritmo que  solicite al usuario un 
+        número entero $n \in \{ 1,2,3,4,5,6,7\}$ e imprima el nombre del día de la semana correspondiente. 
+        Asume que $1$ corresponde a "Lunes" y $7$ a "Domingo", si en numero ingresa no pertenece al conjunto
+        $\{ 1,2,3,4,5,6,7\}$ imprimir el mensaje "El número ingresado no corresponde a un día de la semana" 
+      </p>       
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+      <p>Construye el  diagrama de flujo de un algoritmo que solicite al usuario dos números 
+        enteros $x,y$, calcule e imprima  el valor de la función $f(x,y)$ bajo  la 
+        siguiente regla de correspondencia:
+          \begin{equation}f(x,y) :=
+          \begin{cases}
+          100x,&  \text{ si } y=1, \\
+          100^x,& \text{ si } y=2,  \\
+          x/100,& \text{ si } y=3, \\
+          0    ,&  \text{ para cualquier otro valor de } y \\
+          \end{cases} 
+          \end{equation}
+      </p>
+      <p>Imprimir $f(x,y)= \text{valor_resultante}$</p>
+    </div>
+     
+  <div class="nota-box">
+    <h2 class="number-title"> Práctica</h2>
+    <p>Construye el diagrama de flujo  de un algoritmo  que reciba los coeficientes $a,b,c$ de una ecuación cuadratica: 
+      $ax^2 + bx +c$ y determine si tiene si tiene dos soluciones reales, una solución real o bien ninguna solución real.
+    </p>
+    <p><b>Hint:</b> Utiliza el discrminante de la ecuación cuadrática. </p>
+  </div> 
+
+
+<!-- 
+      
+  <h1 class="page-subtitle">
+    <p>Estructuras de repetición:<br>
+      Mientras (<em>while</em>), repetir-hasta (<em>do-while</em>),
+      para (<em>for</em>)</p>
+  </h1> 
+
+  <div class="nota-box"><h1 class="number-title"> Ciclo mientras (<em>While</em>) y ciclo para (<em>for</em>) </h1>
+    <p>En los ciclos <em>mientras</em> y  <em>para</em> la <b>condición se evalua antes de ingresar al bucle y si esta es verdadera
+      entonces ingresa al ciclo en caso contrario se sale</b>. Por lo que si la condición es inicialmente falsa, el bucle no 
+    se ejecuta ninguna vez. Para ambos casos, el bucle se repite mientras la condición sea verdadera.     </p>
+  </div>
+
+
+      <div class="nota-box"><h2 class="number-title"> Ciclo mientras (<em>While</em>)</h2>
+
+        
+      
+              
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/ER_Mientras.png" alt="", width="30%" height="auto">
+        </div>
+      </p>
+
+      <h2 class="number-title"> Ciclo para (for) </h2>
+
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/ER_para.png" alt="", width="30%" height="auto">
+        </div>
+      </p>
+
+      <h2 class="number-title"> Ciclo repetir-hasta </h2>
+      <p>En el <em>repetir-hasta</em> la condición se evalua despues de la ejecución del bucle.
+      Por lo que, el bucle  siempre se ejecuta por lo menos una vez. El bucle se repite hasta que 
+    la condición sea verdadera.    </p>
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/ER_repetir_hasta.png" alt="", width="30%" height="auto">
+        </div>
+      </p>
       </div>
+
+      <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+        <p>Escriba el pseudocodigo de un algoritmo que  sume los $50$ primeros números naturales.</p>
+      </div>
+
+      <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+        <p>Escriba el pseudocodigo de un algoritmo que imprima la suma de los primeros $100$ números 
+          naturales.
+        </p>
+      </div>
+
+      <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+        <p>Escriba el pseudocodigo de un algoritmo que imprima y sume la serie de  números $3,6,9,\ldots,99$.
+        </p>
+      </div>
+
+      <div class="nota-box"><h2 class="number-title"> Práctica</h2>
+        <p>Escriba el pseudocodigo de un algoritmo que solicite al usuario un número entero positivo $n$, 
+          determine e imprime  el factorial de $n$
+        </p>
+      </div>
+       -->
     </body>
