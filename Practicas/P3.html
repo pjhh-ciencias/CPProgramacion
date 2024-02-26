@@ -48,7 +48,7 @@
         counter-reset: sectionCounter 1 subsectioncounter ;
       } */
       h1.page-title-practica{
-        counter-reset: semanaCounter 2 sectionCounter  subsectionCounter;
+        counter-reset: semanaCounter 3 sectionCounter  subsectionCounter;
       }
     </style>
 
@@ -93,115 +93,162 @@
 
       <!-- This part is for title in tab-->
             
-      <title>Práctica 1 </title>
+      <title>Práctica 3 </title>
       </head>  
 
-
-
-  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 2 </h1>   
-
+  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 3 </h1>   
 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo  de un algoritmo  que lea la base y la altura de un rectángulo y
-        calcule e imprima su área</p>
-      <!-- <button class="respButton hvr-grow ">  Solución       </button>
-          <div class="resp-box flexbox">
-            <div class="flexbox">  
-              <ol>
-              <li>Inicio</li>
-              <li></li>
-              <li>Fin</li>
-              </ol>
-            </div>
-          </div> -->
-    </div>
+      <p>Construye el diagrama de flujo  de un algoritmo  que lea un número entero positivo $n$ (validar entrada)
+        e invierta sus dígitos, imprime el número resultante.  
+      </p>
+      </div>
+ 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo  de un algoritmo que lea dos números reales, 
-        calcule la suma, resta y multiplicación de dichos  números.</p>
-      <!-- <button class="respButton hvr-grow ">  Solución       </button>
-          <div class="resp-box flexbox">
-            <div class="flexbox">  
-              <ol>
-              <li>Inicio</li>
-              <li></li>
-              <li>Fin</li>
-              </ol>
-            </div>
-          </div> -->
-    </div>
-
-    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo 
-        y determine e imprima si este es un número par o impar.
+      <p>Construye el diagrama de flujo de un algoritmo que que implemente ciclos para determinar e  
+        todos los subconjuntos no vacíos del conjunto $\{ 1,2,3,4,5\}$. Imprime los subconjuntos adecuadamente.
       </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea una cantidad en dólares estadounidenses,
-        y convierta esa cantidad a pesos mexicanos.  Imprima el resultado.
-      </p>
-      <p><b>Observación</b> Considera el siguiente tipo de cambio: </p>
-        <center><p>$1$ dólar estadounidense= $\$20.15$ pesos mexicanos.</p></center>  
-    </div>
-
-    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que reciba el precio de un producto, y le aplique un impuesto del  $10\%$ de su costo original. Imprima el precio final del producto. 
+      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $n$ (validar entrada)
+        y determine si $n$ es palindromo. Imprima un mensaje adecuado.  
       </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que reciba el precio de un producto, y le aplique un descuento del  del $5\%$ sobre su costo original. Imprima el precio final del producto. 
+      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $k$ 
+        (validar entrada) y encuentre el número entero positivo  $n$ más pequeño tal que
+        la suma de los $n$ primeros números naturales exceda el valor de $k$.
       </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p> Construye el diagrama de flujo de un algoritmo que reciba el precio de un producto, y le aplique un impuesto del  $15\%$ de su costo original en caso de que su precio sea menor que $\$ 2\,500$ pesos. Imprima el precio final del producto. 
-      </p>
+      <p> Construye el diagrama de flujo de un algoritmo que imprima la tabla de multiplicar del
+        $1, 2,\ldots ,9$ y $10$
+     </p>
+
+     <p>Cada tabla de multiplicar se debe imprimir de la siguiente manera. Por ejemplo
+       para la tabla de multiplicar del $3$, se debe imprimir  la tabla:
+       \begin{align*}
+         1 &\times 3 = 3\\
+         2 &\times 3 = 6\\
+         3 &\times 3 = 9\\
+         4 &\times 3 = 12\\
+         5 &\times 3 = 15\\
+         6 &\times 3 = 18\\
+         7 &\times 3 = 21\\
+         8 &\times 3 = 24\\
+         9 &\times 3 = 27\\
+         10 &\times 3 = 30\\
+       \end{align*}
+     </p>
     </div>
 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea un número de dias (dias completos) y calcule e imprima el número de segundos que hay en el número de días dado.
-      </p>
+      <p>Para encontrar el <b>Máximo Común Divisor</b> (<b>MCD</b>) de 
+        dos números enteros  positivos se puede implementar el <b>Algoritmo de Euclides</b>:</p>
+        <p> Dados  $a,b \in \mathbb{N}$  
+        con $a>b$ (si $a=b$, entonces $\mathrm{MCD}(a,b)=a$), se 
+        divide $a$ entre $b$, obteniendo el cociente $q_{1}$ y el resto 
+        $r_{1}$. Si $r_{1} \not= 0$ 
+        se divide $r_{1}$ entre $b$, obteniendo el
+        cociente $q_{2}$ y el resto $r_{2}$. 
+        Si $r_{2} \not= 0$, se divide $r_{1} $ entre $r_{2}$,
+        para obtener $q_{3}$ y $r_{3}$, y así sucesivamente.
+        Se continúa el proceso hasta que se obtiene un resto igual a  $0$. 
+        El resto anterior a cero es entonces
+        el Máximo Común Divisor de los números $a$ y $b$.</p>
+
+      <p>Se denota el Máximo Común Divisor de $a$ y $b$ por $\mathrm{MCD}(a,b)$.</p>
+    
+      <p>Construye un diagrama de flujo de un algoritmo que solicite al usuario dos números enteros positivos $a$
+        y $b$ (validar entradas), e implemente el algoritmo de Euclides para encontrar el Máximo Común Divisor 
+        de $a$ y $b$. Imprima el resultado.</p>
     </div>
 
     <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye un diagrama de flujo de un algoritmo que reciba cierta cantidad de segundos (número real) 
-        introducida por teclado  e imprima su equivalente en semanas, días, horas, minutos y segundos.</p>        
+      <p> Un número entero positivo $n$ es <b>perfecto</b> si  la suma de todos sus 
+        divisores positivos (excluido el mismo) es igual a $n$.El primer número perfecto 
+        es $6$, ya que los divisores positivos de $6$ son $1, 2, 3$ y $1 + 2 + 3 = 6$.</p>
+     
+      <p>Construye un diagrama de flujo de un algoritmo que encuentre los cinco primeros 
+        números perfectos</p>        
       </div>
     
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que reciba como dato la longitud 
-        de un objeto expresados en pies,determine e imprima la longitud del objeto  en metros.</p>
-        
-      <p><b>Observación</b> Considera que: </p>
-        <center><p>$1$ pie =  $0.09290$ metros.</p></center>    
+      <p> Un triangulo rectángulo puede tener lados que sean todos enteros. El conjunto de tres valores enteros
+        para los lados de un triángulo rectángulo se conoce como una <b>terna pitagórica</b>. Estos tres lados
+       deben satisfacer la relación de que la suma de los cuadrados de dos lados es igual al cuadrado de la
+       hipotenusa.
+     </p>
+      
+      
+      <p>Construye el diagrama de flujo de un algoritmo que encuentre e imprima  todas las ternas de Pitágoras 
+        para el cateto opuesto, cateto adyacente e hipotenusa de un triángulo rectangulo, todos ellos no 
+        mayores de $500$.</p>
       </div>
 
     <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que reciba como dato el peso
-        de un objeto expresados en libras, determine e imprima la longitud del objeto en kilogramos.</p>
-        
-      <p><b>Observación</b> Considera que: </p>
-        <center><p>Una libra  =  $0.45359$ kilogramos.</p></center>    
-      </div>
-
-      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-        <p>Construye el diagrama de flujo  de un algoritmo que  solicite el costo de un artículo
-          y la cantidad de dinero entregada por el cliente, calcule e imprima el cambio que
-          se debe entregar al cliente.
-        </p>
-      </div>
-
-
+      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario  un número  entero 
+        positivo  impar $n$ (validar entrada) e imprima  una figura como la que se muestra a continuación.
+      </p>
+  
+      <p><b>Observación: $n$ es la longitud de las diagonales del rombo</b></p>
       
-<!-- 
-      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-        <p>Construye el diagrama de flujo de un algoritmo que recibe  como dato el radio de un círculo,
-          calcule e imprima tanto su área como el perímetro  de la  circunferencia.
-        </p>
-        <p><b>Sugerencia:</b> Toma el valor de $\pi$ como $3.141516$. </p>
+      <p>Por ejemplo si $n=9$:</p>
+      <pre>
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+      </pre>  
       </div>
 
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <p>Construye el diagrama de flujo  de un algoritmo que solicite al usuario  un número entero 
+          positivo $n$,  e imprima  una figura como la que se muestra a continuación: Por ejemplo 
+          para $n = 6$ 
+        </p>
+        <pre>
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4 
+1 2 3 
+1 2 
+1
+    </pre>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <p>Construye el diagrama de flujo  de un algoritmo que que solicite al usuario  un número entero
+          positivo $n$, e imprima  una figura como la que se muestra a continuación: por ejemplo  
+          para $n = 7$ 
+        </p>
+      
+      <pre>
+1 2 3 4 5 6 7   7 6 5 4 3 2 1
+1 2 3 4 5 6       6 5 4 3 2 1
+1 2 3 4 5           5 4 3 2 1
+1 2 3 4               4 3 2 1
+1 2 3                   3 2 1
+1 2                       2 1
+1                           1
+      </pre>
+      </div>
+
+
+<!-- 
       <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
       <p>Construye el diagrama de flujo  de un algoritmo que al recibir como datos el radio y la altura de
         un cilindro con tapas, calcule e imprima su área y su volumen.</p>
@@ -219,19 +266,7 @@
       </p>
       </div>
 
-    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Escribe el diagrama de flujo de un algoritmo que al recibir como dato un número de cuatro dígitos,
-        genere una impresión como la que se muestra a continuación: por ejemplo el número $6352$:<br>
-          <center>
-          $6$<br>
-          $3$<br>
-          $5$<br>
-          $2$
-        </center>
-      </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
       <p>Construye el diagrama de flujo de un algoritmo que, al recibir como dato el radio de una esfera,
         calcule e imprima el área de la superficie y su volumen.</p>
     </div>
@@ -246,22 +281,6 @@
       <p>Construye el diagrama de flujo  de un algoritmo  que reciba  tres enteros e imprima un mensaje
         que indique si están o no en orden ascendente, imprima "Ordenados" en caso afirmativo o
         "No ordenados" en caso contrario.
-      </p>
-    </div>
-
- 
-
-    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Construye el diagrama de flujo  de un algoritmo que solicite al usuario un número entero positivo menor que
-        $1\,000$ y determine cuantas unidades, decenas y centenas tiene el número. Luego, imprima la notacion desarrollada del número, 
-        i.e. si el usuario ingresa $897$, entonces se debe imprimir la siguiente expresión:
-        $$\text{ 897=8 x 10^2 + 9 x 10^1 + 7 x 10^0}$$
-  
-      </p>
-    </div>
-    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
-      <p>Escriba el  pseudocodigo  de un algoritmo  que imprima la suma de los primeros $100$ números 
-        naturales.
       </p>
     </div>
      -->
